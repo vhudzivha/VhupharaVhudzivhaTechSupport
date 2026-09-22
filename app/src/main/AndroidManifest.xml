@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internet access for REST API communication -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Vhuphara &amp; Vhudzivha Tech Support"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VhupharaVhudzivhaTechSupport"
+        android:usesCleartextTraffic="true">
+
+        <!-- Login screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Registration screen -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Main/Home screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Services screen -->
+        <activity
+            android:name=".ServicesActivity"
+            android:exported="false" />
+
+        <!-- Booking Service screen -->
+        <activity
+            android:name=".BookServiceActivity"
+            android:exported="false" />
+
+        <!-- Booking screen -->
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
+
+        <!-- Track Service screen -->
+        <activity
+            android:name=".TrackServiceActivity"
+            android:exported="false" />
+
+        <!-- Notifications screen -->
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+
+        <!-- Messages screen -->
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false" />
+
+        <!-- Rewards screen -->
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false" />
+
+        <!-- Rewards and Reviews screen -->
+        <activity
+            android:name=".RewardsReviewsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

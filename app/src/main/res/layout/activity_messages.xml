@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page title -->
+        <TextView
+            android:id="@+id/messagesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textColor="#174A73"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Conversation information -->
+        <TextView
+            android:id="@+id/conversationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IT Support Booking #1"
+            android:textColor="#174A73"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Messages -->
+        <TextView
+            android:id="@+id/messagesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Loading messages..."
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Message input -->
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message..."
+            android:inputType="textMultiLine"
+            android:minHeight="55dp"
+            android:gravity="top|start"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#333333"
+            android:textColorHint="#777777"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Send button -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND MESSAGE"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#174A73"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textColor="#174A73"
+            android:backgroundTint="#E1EAF2" />
+
+    </LinearLayout>
+
+</ScrollView>
